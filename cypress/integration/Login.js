@@ -28,6 +28,8 @@ describe('Login', () => {
         cy.contains('Connect').should('not.exist')
     })
     
+    /// Un clean des cookies serait une meilleure pratique, 
+    /// mais le cy.clearCookies ne fonctionnais pas pour moi
     it("logout", () => {
         cy.get('.user-menu-control > span').click({ force: true })
         cy.get(':nth-child(3) > button').click({ force: true })
