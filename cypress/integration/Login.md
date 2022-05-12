@@ -7,7 +7,9 @@
 * No user currently logged in
 
 ### Requirement
-* GIVEN open Jakibi Page login page
+* GIVEN open Jakibi landing page
+* AND click on Connect tab
+* And click on Login button
 
 * WHEN enter account credentials
 * AND click Continue button 
